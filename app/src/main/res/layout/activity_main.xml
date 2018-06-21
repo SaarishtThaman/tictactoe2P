@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.connect3.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/board" />
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/e"
+            android:layout_alignStart="@+id/e"
+            android:layout_alignTop="@+id/board"
+            android:layout_marginTop="10dp"
+            android:onClick="dropIn"
+            android:tag="b" />
+
+        <ImageView
+            android:id="@+id/f"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/i"
+            android:layout_alignStart="@+id/i"
+            android:layout_alignTop="@+id/e"
+            android:layout_marginTop="7dp"
+            android:onClick="dropIn"
+            android:tag="f" />
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/c"
+            android:layout_alignStart="@+id/c"
+            android:layout_alignTop="@+id/h"
+            android:onClick="dropIn"
+            android:tag="i" />
+
+        <ImageView
+            android:id="@+id/g"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/d"
+            android:layout_alignRight="@+id/d"
+            android:layout_alignTop="@+id/h"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:onClick="dropIn"
+            android:tag="g" />
+
+        <ImageView
+            android:id="@+id/d"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/a"
+            android:layout_alignStart="@+id/a"
+            android:layout_alignTop="@+id/e"
+            android:onClick="dropIn"
+            android:tag="d" />
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/board"
+            android:layout_alignStart="@+id/board"
+            android:layout_alignTop="@+id/b"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:onClick="dropIn"
+            android:tag="a" />
+
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/board"
+            android:layout_alignRight="@+id/board"
+            android:layout_alignTop="@+id/b"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="dropIn"
+            android:tag="c" />
+
+        <ImageView
+            android:id="@+id/h"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/board"
+            android:layout_alignLeft="@+id/e"
+            android:layout_alignStart="@+id/e"
+            android:layout_marginBottom="8dp"
+            android:onClick="dropIn"
+            android:tag="h" />
+
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="dropIn"
+            android:tag="e" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="46dp"
+            android:onClick="resetButtonClicked"
+            android:text="RESET BOARD" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
